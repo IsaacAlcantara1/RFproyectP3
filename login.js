@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const btnLogin = document.querySelector('#btnLogin');
+
+btnLogin.addEventListener('click', () => {
+    const username = document.querySelector('#username').value;
+    const password = document.querySelector('#password').value;
+
+    if (username.trim() === '' || password.trim() === '') {
+        const spam = document.createElement('p');
+        spam.textContent = 'Por favor complete todos los campos';
+        spam.style.color = 'red'; // O cualquier estilo que desees para resaltar el mensaje de error
+        document.querySelector('.Login').appendChild(spam);
+    }
+});
+
+});

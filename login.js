@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (username.trim() === '' || password.trim() === '') {
             const spam = document.createElement('p');
             spam.textContent = 'Por favor complete todos los campos';
-            spam.style.color = 'red'; // O cualquier estilo que desees para resaltar el mensaje de error
+            spam.style.color = 'red'; 
             document.querySelector('.Login').appendChild(spam);
         } 
         if (username === "admin" && password === "admin") {

@@ -64,7 +64,7 @@ body {
     margin: 10px 10px;
 }
 
-/* ESTILOS LISTADO */
+
 .contenedor .div-listado {
     width: 55%;
     height: calc(100% - 50px);
@@ -96,16 +96,16 @@ body {
     margin: 10px 0;
     font-size: 1.2em;
     color: #ddd;
-    text-align: center; /* Centrar el texto */
-    list-style-type: none; /* Eliminar los números de la lista */
+    text-align: center; 
+    list-style-type: none; 
 }
 
-/* Estilos para la línea divisoria */
+
 hr {
-    width: 90%; /* Ajustar el ancho */
-    margin: 10px auto; /* Centrar horizontalmente */
+    width: 90%; 
+    margin: 10px auto; 
     border: none;
-    border-top: 1px solid #ddd; /* Estilo de la línea */
+    border-top: 1px solid #ddd; 
 }
 
 .btn {

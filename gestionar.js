@@ -1,11 +1,11 @@
 const form = document.getElementById('ausenciaForm');
 const listaAusencias = document.getElementById('listaAusencias');
 
-// Crear el mensaje de error
+
 const mensajeError = document.createElement('span');
 mensajeError.textContent = 'Todos los campos son obligatorios';
 mensajeError.style.color = 'red';
-mensajeError.style.display = 'none'; // Inicialmente oculto
+mensajeError.style.display = 'none'; 
 document.querySelector('.form-container').appendChild(mensajeError);
 
 form.addEventListener('submit', agregarAusencia);
@@ -21,9 +21,9 @@ function agregarAusencia(event) {
         const nuevaAusencia = { nombre, tipo, fecha };
         mostrarAusencia(nuevaAusencia);
         form.reset();
-        mensajeError.style.display = 'none'; // Ocultar el mensaje de error si todos los campos están llenos
+        mensajeError.style.display = 'none'; 
     } else {
-        mensajeError.style.display = 'block'; // Mostrar el mensaje de error si hay campos vacíos
+        mensajeError.style.display = 'block'; 
     }
 }
 

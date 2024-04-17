@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de Pruebas">
+
+    <test name="Pruebas de WebDriver">
+        <classes>
+            <class name="org.example.LoginEmpleado"/>
+            <class name="org.example.AgregarEmpleado"/>
+            <class name="org.example.ActualizarEmpleado"/>
+            <class name="org.example.CompatibilidadNavegadores"/>
+              <class name="org.example.EliminarEmpleado"/>
+              <class name="org.example.EstilosBasicos"/>
+              <class name="org.example.GuardarDatosLocalmente"/>
+              <class name="org.example.InterfazUsuario"/>
+            <class name="org.example.RedirigirVacaciones"/>
+            <class name="org.example.GestionAusenciasVacacionesTest"/>
+              <!-- Agrega más clases de prueba aquí si es necesario -->
+        </classes>
+    </test>
+
+</suite>

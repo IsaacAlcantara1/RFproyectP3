@@ -18,14 +18,36 @@ const correoInput = document.querySelector('#correo');
 const btnAgregarInput = document.querySelector('#btnAgregar');
 const divEmpleados = document.querySelector('.div-empleados');
 
+// Creamos un span para mostrar el mensaje de error
+const mensajeError = document.createElement('span');
+mensajeError.textContent = 'Todos los campos se deben llenar';
+mensajeError.classList.add('error-message');
+mensajeError.style.color = 'red'; // Establecemos el color rojo
+mensajeError.style.display = 'none'; // Ocultamos el mensaje de error inicialmente
+formulario.appendChild(mensajeError);
+
+btnAgregarInput.addEventListener('click', () => {
+    if(nombreInput.value === '' || puestoInput.value === '' || sueldoInput.value === '' || correoInput.value === '') { 
+        // Mostramos el mensaje de error si los campos están vacíos
+        mensajeError.style.display = 'block';
+    } else {
+        // Ocultamos el mensaje de error si los campos están llenos
+        mensajeError.style.display = 'none';
+    }
+});
+
 formulario.addEventListener('submit', validarFormulario);
 
 function validarFormulario(e) {
     e.preventDefault();
 
     if(nombreInput.value === '' || puestoInput.value === '' || sueldoInput.value === '' || correoInput.value === '') { 
-        alert('Todos los campos se deben llenar');
+        // Mostramos el mensaje de error si los campos están vacíos
+        mensajeError.style.display = 'block';
         return;
+    } else {
+        // Ocultamos el mensaje de error si los campos están llenos
+        mensajeError.style.display = 'none';
     }
 
     if(editando) {
@@ -137,4 +159,9 @@ function limpiarHTML() {
         divEmpleados.removeChild(divEmpleados.firstChild);
     }
 }
+const btnVacaciones = document.querySelector('#btnVacaciones');
 
+btnVacaciones.addEventListener('click', () => {
+    // Redirigir a otra página
+    window.location.href = 'gestion.html'; 
+});

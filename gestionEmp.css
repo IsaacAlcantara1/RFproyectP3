@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Agregado para establecer una fuente predeterminada */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: bisque;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #000; /* Color de la fuente cambiado a negro */
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-container,
+.list-container {
+    width: calc(50% - 10px);
+    background-color: rgb(135, 132, 132);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+}
+
+.form-container h2,
+.list-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000; /* Color de la fuente cambiado a negro */
+}
+
+.Input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #000; /* Color de la fuente cambiado a negro */
+}
+
+input,
+select {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    color: #000; /* Color de la fuente cambiado a negro */
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.list-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
